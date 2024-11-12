@@ -16,7 +16,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 export default function Component() {
-  const BACKEND_URL = "http://localhost:3000";
+  const BACKEND_URL = "https:event-notification.azurewebsites.net";
   const { toast } = useToast();
   const [studentName, setStudentName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
