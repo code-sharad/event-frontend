@@ -16,7 +16,6 @@ import {
 import { useToast } from "@/hooks/use-toast";
 
 export default function Component() {
-  const BACKEND_URL = "https:event-notification.azurewebsites.net";
   const { toast } = useToast();
   const [studentName, setStudentName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -34,7 +33,7 @@ export default function Component() {
 
   const simulateWhatsAppMessage = async () => {
     // Simulate API call to send WhatsApp message
-    await fetch(`/api/students`, {
+    await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/students`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
