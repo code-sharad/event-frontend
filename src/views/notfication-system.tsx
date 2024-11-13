@@ -34,7 +34,7 @@ export default function Component() {
 
   const simulateWhatsAppMessage = async () => {
     // Simulate API call to send WhatsApp message
-    await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/students`, {
+    await fetch(`/api/students`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
