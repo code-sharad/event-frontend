@@ -1,7 +1,6 @@
 {
   "name": "frontend",
   "private": true,
-  "proxy":"https://event-backend-456128109301.us-central1.run.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
